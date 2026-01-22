@@ -1053,41 +1053,35 @@ footer {
 }
 
 /* ========== Bank Partners Grid ========== */
-.section-title {
-    text-align: center;
-    font-size: 2.4rem;
-    color: var(--primary-blue);
-    margin-bottom: 3rem;
-}
-
+/* Grid */
 .banks-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-    gap: 2.2rem;
+    gap: 2.4rem;
 }
 
 /* Card */
 .bank-card {
     background: #ffffff;
-    padding: 2rem 1.5rem;
+    padding: 2rem 1.6rem;
     border-radius: 18px;
     text-align: center;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
-    transition: all 0.4s ease;
-    border: 2px solid transparent;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    transition: all 0.35s ease;
+    border: 1px solid #eef1f5;
 }
 
 .bank-card:hover {
-    transform: translateY(-12px);
-    border-color: var(--gold);
-    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+    transform: translateY(-10px);
+    box-shadow: 0 18px 45px rgba(0,0,0,0.15);
+    border-color: #c9a14a;
 }
 
-/* Logo box */
+/* LOGO OUTER CANVAS (SAME FOR ALL) */
 .bank-logo {
     height: 110px;
     width: 100%;
-    background: linear-gradient(135deg, var(--primary-blue), var(--deep-blue));
+    background: #f6f8fb;
     border-radius: 14px;
     display: flex;
     align-items: center;
@@ -1095,33 +1089,41 @@ footer {
     margin-bottom: 1.2rem;
 }
 
-/* SVG/PNG logo */
-.bank-logo img {
- border-radius: 14px;
-    max-width: 111%;
-    max-height: 108px;
-    object-fit: contain;
-    filter: grayscale(100%);
-    transition: all 0.4s ease;
+/* LOGO INNER FRAME (CRITICAL) */
+.bank-logo::before {
+    content: "";
+    position: absolute;
 }
 
-/* Hover logo */
+/* LOGO IMAGE */
+.bank-logo img {
+    max-width: 150px;
+    max-height: 60px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    filter: grayscale(100%) brightness(0.65);
+    transition: all 0.35s ease;
+}
+
+/* Hover */
 .bank-card:hover .bank-logo img {
-    filter: grayscale(0%);
+    filter: grayscale(0%) brightness(1);
     transform: scale(1.08);
 }
 
 /* Text */
 .bank-card h3 {
-    font-size: 1.1rem;
-    color: var(--primary-blue);
-    margin: 0.8rem 0 0.4rem;
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #0b1c2d;
+    margin: 0.6rem 0 0.3rem;
 }
 
 .bank-card p {
-    font-size: 0.95rem;
-    color: #555;
-    line-height: 1.6;
+    font-size: 0.9rem;
+    color: #666;
+    line-height: 1.5;
 }
 
 /* ========== Service Details ========== */
