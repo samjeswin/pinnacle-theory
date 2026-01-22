@@ -1288,8 +1288,9 @@ footer {
     }
 
     .process-step-number {
-        left: 30px !important;
+        left: 25px !important;
         right: auto !important;
+        top: 34px !important;
     }
 
     .calculator-container,
