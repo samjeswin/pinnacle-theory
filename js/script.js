@@ -352,14 +352,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // ========== WhatsApp Integration ==========
 function openWhatsApp() {
-    const phoneNumber = '919821000000'; // Replace with actual WhatsApp number
+    const phoneNumber = '918124506001'; // Replace with actual WhatsApp number
     const message = encodeURIComponent('Hello, I am interested in your financial services.');
     window.open(`https://wa.me/${phoneNumber}?text=${message}`, '_blank');
 }
 
 // ========== Call Integration ==========
 function makeCall() {
-    const phoneNumber = '+919821000000'; // Replace with actual phone number
+    const phoneNumber = '+918124506001'; // Replace with actual phone number
     window.location.href = `tel:${phoneNumber}`;
 }
 
